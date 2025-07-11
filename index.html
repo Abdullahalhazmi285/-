@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>نظام الشكاوى والمقترحات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>نظام الشكاوى والمقترحات</h1>
 
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="الاسم الكامل" required />
+      <input type="text" id="class" placeholder="الصف الدراسي" required />
+      <textarea id="message" rows="5" placeholder="اكتب شكواك أو مقترحك هنا..." required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+
+    <h2>جميع الشكاوى والمقترحات</h2>
+    <ul id="complaintsList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
